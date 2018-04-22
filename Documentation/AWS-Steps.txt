@@ -1,0 +1,34 @@
+Powershell Steps:
+
+1. Terraform Scripts - to create s3, sqs and dynamodb 
+
+2. Run scala application and store model in s3
+
+3. Run backend console application and put the data into sqs
+
+4. Run scala application to poll data from sqs queue and store results in dynamodb
+
+5. Visualize the results in Amazon Quick sight. 
+
+Tools 
+Powershell - to write build steps and functions 
+sql serve - to input data 
+Visual studio 2017 - console application c# 
+intellij idea - scala project that run on apache spark 
+Terraform - to create aws infrastructure and stroe state information as backend in s3 
+AWS - sqs, s3, dynamodb, quicksight
+
+Extra: 
+source control management - github
+continuous integration - jenkins
+
+Pricing:
+Amazon QuickSight - free for 60 days
+Amazon sqs - first 1 million requests free
+Amazon s3 - free for 5 gb - 20000 get requests, 2000 put requests 15 gb of data transfer per month 
+Amazon dynamodb - 25 gb data storage - 200 million read requests (25 write capacity units and 25 read capacity units) 
+
+Advantages: 
+Cost effective 
+Exposure to different technologies 
+using no sql database 
